@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Досліджуйте можливості .NET MAUI, кросплатформного фреймворка для створення мобільних та десктопних додатків.">
+    <title>.NET MAUI - Створення кросплатформних додатків</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="background-color: #1f1f1f; color: #ffffff;">
+<!-- Header Section -->
+<header class="text-white py-3">
+    <div class="container d-flex align-items-center justify-content-between">
+        <!-- Logo and Name Section -->
+        <div class="d-flex align-items-center">
+            <img src="img/fav.png" alt=".NET MAUI Logo" class="logo" style="height: 50px;">
+             <a href="index.html">
+            <button class="btn-logo ms-2" id="logo-button" onclick="animateButton()">
+                .NET MAUI
+            </button>
+        </a>
+        </div>
+
+        <!-- Navigation Section with Burger Menu on Smaller Screens -->
+        <nav>
+            <ul class="nav d-none d-lg-flex">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Головна</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-white">Про нас</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link text-white">Контакти</a></li>
+                <li class="nav-item"><a href="resandtools.html" class="nav-link text-white">Ресурси та інструменти</a></li>
+            </ul>
+
+            <!-- Burger Menu button for small screens -->
+            <button class="navbar-toggler d-lg-none custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="menu-icon">
+                    <span class="navbar-toggler-icon"></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse d-lg-none" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Головна</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link text-white">Про нас</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link text-white">Контакти</a></li>
+                    <li class="nav-item"><a href="resandtools.html" class="nav-link text-white">Ресурси та інструменти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+    <!-- Main Section -->
+    <main class="fadeIn">
+    <section class="hero">
+        <h1>Ласкаво просимо до .NET MAUI</h1>
+        <p>Досліджуйте потужний кросплатформний фреймворк для розробки додатків.</p>
+        <a href="#more">Дізнатися більше</a>
+    </section>
+
+        <!-- Gallery Section with Background Image -->
+        <section class="gallery section-background">
+            <div class="container text-center">
+                <h2 class="mb-4" style="color: #7057CF;">Атмосфера розробки додатка на .NET MAUI</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <img src="img/dotnetmaui1.png" alt="Скрін 1" class="img-fluid gallery-image rounded shadow">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/dotnetmaui2.png" alt="Скрін 2" class="img-fluid gallery-image rounded shadow">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/dotnetmaui3.png" alt="Скрін 3" class="img-fluid gallery-image rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="dotnet-maui-resources py-5" style="background-color: #1f1f1f;">
+            <div class="container text-center" id="more">
+                <h2 class="mb-4" style="color: #7057CF;">Досліджуйте можливості .NET MAUI</h2>
+                <p class="lead" style="color: #e4e4e4;">Дізнайтеся про можливості .NET MAUI та як створювати кросплатформні додатки з легкістю. Почніть навчання вже сьогодні!</p>
+
+                <!-- Link to .NET MAUI documentation -->
+                <a href="https://learn.microsoft.com/en-us/dotnet/maui/what-is-maui" target="_blank" class="btn custom-btn mb-3">Документація .NET MAUI</a>
+
+                <!-- Link to .NET MAUI Sample Code on GitHub -->
+                <a href="https://github.com/dotnet/maui-samples" target="_blank" class="btn custom-btn mb-3">Проекти .NET MAUI</a>
+            </div>
+        </section>
+
+       <!-- YouTube Video Section -->
+<section class="video py-5 section-background" style="background-color: #2a2a2a; color: #e4e4e4;">
+    <div class="container text-center">
+        <h2 class="mb-4 fw-bold" style="color: #7057CF;">Досліджуйте .NET MAUI в дії</h2>
+        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Hh279ES_FNQ?si=6Dg39tNQG4p_h1Qw" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Dynamic JavaScript Section -->
+<section class="dynamic-elements py-5" style="background-color: #292929;">
+    <div class="container">
+        <h2 class="mb-4 text-center fw-bold" style="color: #7057CF;">Динамічні можливості</h2>
+        <!-- Accordion -->
+        <div class="accordion" id="dynamicAccordion">
+            <!-- 1. What is .NET MAUI? -->
+            <div class="accordion-item" style="background-color: #2a2a2a; border-color: #444;">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Що таке .NET MAUI?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#dynamicAccordion">
+                    <div class="accordion-body" style="background-color: #2a2a2a; color: #e4e4e4;">
+                        .NET MAUI — це кросплатформний фреймворк, який дозволяє створювати додатки для Android, iOS, macOS та Windows з єдиною кодовою базою.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Особливості .NET MAUI -->
+            <div class="accordion-item" style="background-color: #2a2a2a; border-color: #444;">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Особливості .NET MAUI
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#dynamicAccordion">
+                    <div class="accordion-body" style="background-color: #2a2a2a; color: #e4e4e4;">
+                        <ul>
+                            <li><strong>Єдина кодова база:</strong> Напишіть один код і запустіть на Android, iOS, macOS та Windows.</li>
+                            <li><strong>Нативна продуктивність:</strong> .NET MAUI дозволяє створювати додатки з високою продуктивністю, які працюють як нативні на кожній платформі.</li>
+                            <li><strong>Уніфікований API:</strong> Один набір API для всіх платформ, що спрощує розробку.</li>
+                            <li><strong>Налаштовуваний інтерфейс:</strong> Нативні елементи керування та макети, а також підтримка кастомних елементів.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. .NET MAUI vs Інші фреймворки -->
+            <div class="accordion-item" style="background-color: #2a2a2a; border-color: #444;">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        .NET MAUI vs Інші фреймворки
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#dynamicAccordion">
+                    <div class="accordion-body" style="background-color: #2a2a2a; color: #e4e4e4;">
+                        <p>.NET MAUI пропонує кращий досвід у порівнянні з іншими кросплатформними фреймворками. Ось порівняння:</p>
+                        <ul>
+                            <li><strong>Проти Flutter:</strong> .NET MAUI глибоко інтегрується з екосистемою Microsoft, що робить його ідеальним для корпоративних додатків.</li>
+                            <li><strong>Проти React Native:</strong> .NET MAUI надає кращу підтримку для додатків на Windows і macOS, у той час як React Native відмінно підходить для мобільних платформ.</li>
+                            <li><strong>Проти Xamarin:</strong> .NET MAUI є наступним поколінням Xamarin, пропонуючи кращу продуктивність і розширену підтримку платформ.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Як почати працювати з .NET MAUI -->
+            <div class="accordion-item" style="background-color: #2a2a2a; border-color: #444;">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Як почати працювати з .NET MAUI
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#dynamicAccordion">
+                    <div class="accordion-body" style="background-color: #2a2a2a; color: #e4e4e4;">
+                        <ol>
+                            <li><strong>Встановіть Visual Studio:</strong> Завантажте та встановіть останню версію Visual Studio.</li>
+                            <li><strong>Встановіть .NET MAUI:</strong> Встановіть робоче середовище .NET MAUI через інсталятор Visual Studio.</li>
+                            <li><strong>Створіть свій перший додаток:</strong> Використовуйте .NET CLI або шаблони Visual Studio для створення нового додатку .NET MAUI.</li>
+                            <li><strong>Запустіть на різних платформах:</strong> Тестуйте та налагоджуйте додаток на Android, iOS, macOS та Windows.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Приклади додатків, створених за допомогою .NET MAUI -->
+            <div class="accordion-item" style="background-color: #2a2a2a; border-color: #444;">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Приклади додатків, створених за допомогою .NET MAUI
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#dynamicAccordion">
+                    <div class="accordion-body" style="background-color: #2a2a2a; color: #e4e4e4;">
+                        <p>Ось кілька прикладів додатків, створених за допомогою .NET MAUI:</p>
+                        <ul>
+                            <li><strong>Трекер витрат:</strong> Кросплатформний додаток для управління особистими фінансами.</li>
+                            <li><strong>Менеджер завдань:</strong> Простий додаток для підвищення продуктивності, який синхронізується між мобільними та десктопними платформами.</li>
+                            <li><strong>Прогноз погоди:</strong> Додаток, що отримує актуальні дані і відображає їх на всіх платформах.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        </main>
+    <!-- Footer Section -->
+    <footer style="background-color: #2a2a2a; color: #e4e4e4;" class="py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2024 .NET MAUI. Всі права захищено.</p>
+            <a href="https://github.com/olegmlnk" target="_blank" class="fab fa-github social-icon"></a>
+            <a href="https://www.instagram.com/oleg_mlnk/" target="_blank" class="fab fa-instagram social-icon"></a>
+            <a href="https://www.linkedin.com/in/oleg-melnyk-7b5521297/" target="_blank" class="fab fa-linkedin social-icon"></a>
+        </div>
+    </footer>
+</body>
+</html>

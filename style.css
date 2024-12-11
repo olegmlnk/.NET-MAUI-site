@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Для мобільного перегляду: розміщення елементів */
+@media (max-width: 768px) {
+    .d-flex.align-items-center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        order: 2;
+        margin-top: 10px;
+    }
+
+    .collapse.navbar-collapse {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        background-color: #1f1f1f;
+        padding: 15px;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* Основний стиль для кнопки та бургер-меню */
+.navbar-toggler {
+    z-index: 1050;
+}
+
+.collapse.navbar-collapse.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body, html {
+    font-family: 'Play', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #121212;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #1F1F1F;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .logo {
+    height: 50px;
+}
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    padding: 5px;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #5740A2;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler[aria-expanded="true"] .menu-icon span:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: 5% 50%;
+    background-color: #5740A2;
+}
+
+.navbar-toggler[aria-expanded="true"] .menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: 5% 50%;
+    background-color: #7057CF;
+}
+
+.btn-logo {
+    background-color: #2a2a2a;
+    border: 2px solid transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7057CF;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(112, 87, 207, 0.5);
+}
+
+.btn-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(112, 87, 207, 1), 0 0 20px rgba(112, 87, 207, 0.7), 0 0 30px rgba(112, 87, 207, 0.9);
+    background-color: #7057CF;
+    color: #fff;
+    border-color: #7057CF;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+body, html {
+    font-family: 'Play', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #121212;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Для слайдів з текстом */
+.tech-slide {
+    height: 200px;
+    text-align: center;
+    color: #fff;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tech-slide h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff8c00;
+}
+
+.tech-slide p {
+    font-size: 1rem;
+    color: #e4e4e4;
+}
+
+.icon-box {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #7057CF;
+}
+
+.gallery {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #444;
+}
+
+.gallery img {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #75b6e7;
+    transform: translateY(-5px);
+}
+
+.custom-btn:active {
+    transform: translateY(1px);
+    background-color: #75b6e7;
+}
+
+footer {
+    background: #1F1F1F;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #1E90FF;
+    transform: scale(1.2);
+}
+
+.social-icon.fab.fa-github {
+    color: #e8e6e6;
+}
+
+.social-icon.fab.fa-instagram {
+    color: #E4405F;
+}
+
+.social-icon.fab.fa-linkedin {
+    color: #0077b5;
+}
+
+.social-icon:hover.fab.fa-linkedin {
+    color: #005582;
+}
+
+
+.section-background {
+    position: relative; /* Для позиціонування псевдоелемента */
+    background-image: url(https://i.redd.it/8wlaozbp6h8b1.jpg); /* Шлях до вашого зображення */
+    background-size: cover; /* Масштабує фон на весь екран */
+    background-position: center center; /* Центрує фон */
+    background-repeat: no-repeat; /* Забороняє повторення */
+    padding: 60px 0; /* Відступи для секцій */
+    color: #ffffff; /* Білий текст на фоні */
+}
+
+/* Псевдоелемент для затемнення */
+.section-background::before {
+    content: ''; /* Необхідно для відображення псевдоелемента */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Чорний колір з напівпрозорістю */
+    z-index: 1; /* Перекриває фон */
+}
+
+/* Для тексту всередині секції */
+.section-background .container {
+    position: relative; /* Зберігає текст поверх псевдоелемента */
+    z-index: 2; /* Забезпечує, щоб текст не перекривався затемненням */
+}
+
+
+  /* Анімації */
+  .fadeIn {
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.zoomIn {
+    animation: zoomIn 1.5s ease-out;
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Стилі для секцій */
+.about-us, .our-team, .developer-info {
+    background-color: #2a2a2a;
+    color: #e4e4e4;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.developer-info {
+    background-color: #292929;
+}
+
+.developer-info h2 {
+    color: #7057CF;
+}
+
+.developer-info p {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.developer-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.developer-info .social-icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #7057CF;
+}
+
+.developer-info .social-icon:hover {
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+   /* Загальні стилі для слайдів з текстом */
+   .tech-slide {
+    height: 200px; /* Висота слайду */
+    text-align: center;
+    color: #fff;
+    background-color: #2a2a2a; /* Темний фон */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tech-slide h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff8c00; /* Помаранчевий акцент */
+}
+
+.tech-slide p {
+    font-size: 1rem;
+    color: #e4e4e4;
+}
+
+.fa-html5, .fa-css3-alt, .fa-bootstrap, .fa-js, .fa-font-awesome, .fa-jquery {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+    color: #ff8c00;
+}
+
+.about-btn {
+    padding: 10px 20px;
+    background-color: #7057CF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: #5740A2;
+}
+
+.form-control {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+.form-control::placeholder {
+    color: #bbbbbb;
+}
+.form-control:focus {
+    border-color: #7057CF;
+    box-shadow: 0 0 5px #7057CF;
+}
+.btn-primary {
+    background-color: #7057CF;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #5740A2;
+}
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Кастомна кнопка аккордеону з неоновою підсвіткою */
+.custom-button {
+    background-color: #3a3a3a;
+    color: #7057CF;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+}
+
+/* Ефект при наведенні на кнопки аккордеону */
+.custom-button:hover {
+    background-color: #7057CF;
+    color: #fff;
+    box-shadow: 0 0 10px 3px rgba(112, 87, 207, 0.8); /* Неонове сяйво */
+    transform: scale(1.05);
+}
+
+/* Кастомний стиль для заголовків аккордеону з неоновою підсвіткою */
+.accordion-header {
+    background-color: #3a3a3a;
+    color: #7057CF;
+    border: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    color: #fff;
+    background-color: #7057CF;
+    box-shadow: 0 0 10px 3px rgba(112, 87, 207, 0.8); /* Неонове сяйво */
+}
+
+/* Заголовок аккордеону */
+.accordion-button {
+    color: #7057CF;
+    background-color: #3a3a3a;
+    border: none;
+    font-weight: bold;
+}
+
+/* Стилі для відкритого аккордеону */
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #7057CF;
+    box-shadow: 0 0 10px 3px rgba(112, 87, 207, 0.8);
+}
+.section-background {
+    position: relative;
+    background-image: url(https://i.redd.it/8wlaozbp6h8b1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    color: #ffffff;
+}
+
+.section-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.section-background .container {
+    position: relative;
+    z-index: 2;
+}
+
+.fadeIn {
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.zoomIn {
+    animation: zoomIn 1.5s ease-out;
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.about-us, .our-team, .developer-info {
+    background-color: #2a2a2a;
+    color: #e4e4e4;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.developer-info {
+    background-color: #292929;
+}
+
+.developer-info h2 {
+    color: #7057CF;
+}
+
+.developer-info p {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.developer-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.developer-info .social-icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #7057CF;
+}
+
+.developer-info .social-icon:hover {
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.tech-slide {
+    height: 200px;
+    text-align: center;
+    color: #fff;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tech-slide h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff8c00;
+}
+
+.tech-slide p {
+    font-size: 1rem;
+    color: #e4e4e4;
+}
+
+.fa-html5, .fa-css3-alt, .fa-bootstrap, .fa-js, .fa-font-awesome, .fa-jquery {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+    color: #ff8c00;
+}
+
+.about-btn {
+    padding: 10px 20px;
+    background-color: #7057CF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: #5740A2;
+}
+
+.form-control {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+.form-control::placeholder {
+    color: #bbbbbb;
+}
+
+.form-control:focus {
+    border-color: #7057CF;
+    box-shadow: 0 0 5px #7057CF;
+}
+
+.btn-primary {
+    background-color: #7057CF;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #5740A2;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.custom-button {
+    background-color: #3a3a3a;
+    color: #7057CF;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #7057CF;
+    color: #fff;
+    box-shadow: 0 0 10px 3px rgba(112, 87, 207, 0.8);
+    transform: scale(1.05);
+}
+
+.accordion-header {
+    background-color: #3a3a3a;
+    color: #7057CF;
+    border: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    color: #fff;
+    background-color: #7057CF;
+    box-shadow: 0 0 10px 3px rgba(112, 87, 207, 0.8);
+}
+
+.accordion-button {
+    color: #7057CF;
+    background-color: #3a3a3a;
+    border: none;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #7057CF;
+    box-shadow: 0 0 10px 3px rgba(112, 87, 207, 0.8);
+}
